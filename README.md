@@ -4,15 +4,17 @@
 The `twitter_intent` package helps you build Twitter Web Intents (URLs) and
 provides an idiomatic Dart interface to ask your users to
 
-* create tweets with custom hashtags, URL, pre-populated text, emoji-support, mentions, or replies
-* like tweets
-* follow a user
-* retweet tweets
-* send direct messages to a user (with optional pre-populated message)
+* create tweets with custom hashtags, URL, pre-populated text, emoji-support, mentions, or replies 🐦
+* like tweets 💙
+* follow a user 🤩
+* retweet tweets 📢
+* send direct messages to a user (with optional pre-populated message) 💌
+
+![Continuous Integration](https://github.com/dartsidedev/twitter_intent/workflows/Continuous%20Integration/badge.svg?branch=master)](https://github.com/dartsidedev/twitter_intent/actions) [![codecov](https://codecov.io/gh/dartsidedev/twitter_intent/branch/master/graph/badge.svg)](https://codecov.io/gh/dartsidedev/twitter_intent) [![twitter_intent](https://img.shields.io/pub/v/twitter_intent?label=twitter_intent&logo=dart)](https://pub.dev/packages/twitter_intent 'See twitter_intent package info on pub.dev') [![Published by dartside.dev](https://img.shields.io/static/v1?label=Published%20by&message=dartside.dev&logo=dart&logoWidth=30&color=40C4FF&labelColor=1d599b&labelWidth=100)](https://pub.dev/publishers/dartside.dev/packages) [![GitHub Stars Count](https://img.shields.io/github/stars/dartsidedev/twitter_intent?logo=github)](https://github.com/dartsidedev/twitter_intent 'Star me on GitHub!')
 
 ## Important links
 
-* [Read the source code and **star the repo!** on GitHub](https://github.com/dartsidedev/twitter_intent)
+* [Read the source code and **star the repo** on GitHub](https://github.com/dartsidedev/twitter_intent)
 * [Open an issue on GitHub](https://github.com/dartsidedev/twitter_intent/issues)
 * [See package on `pub.dev`](https://pub.dev/packages/twitter_intent)
 * [Read the docs on `pub.dev`](https://pub.dev/documentation/twitter_intent/latest/)
@@ -192,6 +194,10 @@ This basically means that you can set the language of the Twitter UI by passing
 in the `language` parameter.
 
 Twitter supports 30+ languages. For the full list visit [Twitter's supported languages](https://developer.twitter.com/en/docs/twitter-for-websites/supported-languages) document.
+
+This feature only works in web browsers. Overriding the mobile app's language is not possible.
+If you want to test the examples below, copy the link address and open it in an
+incognito window.
 
 #### Follow (Chinese)
 
