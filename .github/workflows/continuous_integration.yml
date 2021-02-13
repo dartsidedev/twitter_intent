@@ -45,17 +45,14 @@ jobs:
       - name: Get dependencies
         run: dart pub get
       - name: Verify example formatted correctly
-        working-directory: ./example/dart
+        working-directory: ./example
         run: dartfmt --set-exit-if-changed .
       - name: Verify example has no analysis errors
-        working-directory: ./example/dart
+        working-directory: ./example
         run: dart analyze --fatal-infos --fatal-warnings .
       - name: Verify example compiles correctly
-        working-directory: ./example/dart
-        run: dart compile aot-snapshot whatsapp_unilink_example.dart
-
-  # We also have a Flutter example, that's currently not verified
-  # as part of the CI process.
+        working-directory: ./example
+        run: dart compile aot-snapshot main.dart
 
   publish:
     runs-on: ubuntu-latest

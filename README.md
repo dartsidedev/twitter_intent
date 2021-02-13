@@ -5,12 +5,12 @@ The `twitter_intent` package helps you build Twitter Web Intents (URLs) and
 provides an idiomatic Dart interface to ask your users to
 
 * create tweets with custom hashtags, URL, pre-populated text, emoji-support, mentions, or replies 🐦
+* send direct messages to a user (with optional pre-populated message) 💌
 * like tweets 💙
 * follow a user 🤩
 * retweet tweets 📢
-* send direct messages to a user (with optional pre-populated message) 💌
 
-![Continuous Integration](https://github.com/dartsidedev/twitter_intent/workflows/Continuous%20Integration/badge.svg?branch=master)](https://github.com/dartsidedev/twitter_intent/actions) [![codecov](https://codecov.io/gh/dartsidedev/twitter_intent/branch/master/graph/badge.svg)](https://codecov.io/gh/dartsidedev/twitter_intent) [![twitter_intent](https://img.shields.io/pub/v/twitter_intent?label=twitter_intent&logo=dart)](https://pub.dev/packages/twitter_intent 'See twitter_intent package info on pub.dev') [![Published by dartside.dev](https://img.shields.io/static/v1?label=Published%20by&message=dartside.dev&logo=dart&logoWidth=30&color=40C4FF&labelColor=1d599b&labelWidth=100)](https://pub.dev/publishers/dartside.dev/packages) [![GitHub Stars Count](https://img.shields.io/github/stars/dartsidedev/twitter_intent?logo=github)](https://github.com/dartsidedev/twitter_intent 'Star me on GitHub!')
+[![Continuous Integration](https://github.com/dartsidedev/twitter_intent/workflows/Continuous%20Integration/badge.svg?branch=master)](https://github.com/dartsidedev/twitter_intent/actions) [![codecov](https://codecov.io/gh/dartsidedev/twitter_intent/branch/master/graph/badge.svg)](https://codecov.io/gh/dartsidedev/twitter_intent) [![twitter_intent](https://img.shields.io/pub/v/twitter_intent?label=twitter_intent&logo=dart)](https://pub.dev/packages/twitter_intent 'See twitter_intent package info on pub.dev') [![Published by dartside.dev](https://img.shields.io/static/v1?label=Published%20by&message=dartside.dev&logo=dart&logoWidth=30&color=40C4FF&labelColor=1d599b&labelWidth=100)](https://pub.dev/publishers/dartside.dev/packages) [![GitHub Stars Count](https://img.shields.io/github/stars/dartsidedev/twitter_intent?logo=github)](https://github.com/dartsidedev/twitter_intent 'Star me on GitHub!')
 
 ## Important links
 
