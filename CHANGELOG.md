@@ -5,3 +5,7 @@
 ## 1.0.0-nullsafety.1
 
 - Improved docs, etc...
+
+## 0.9.0
+
+- Pre-null-safety

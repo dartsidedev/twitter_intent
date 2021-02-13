@@ -2,7 +2,7 @@ const _authority = 'twitter.com';
 
 class RetweetIntent {
   RetweetIntent({
-    required this.tweetId,
+    this.tweetId,
     this.language,
   });
 
@@ -12,7 +12,7 @@ class RetweetIntent {
   final String tweetId;
 
   /// The language of the Twitter UI once the intent is launched.
-  final String? language;
+  final String language;
 
   @override
   String toString() {
@@ -21,7 +21,7 @@ class RetweetIntent {
       _path,
       {
         'tweet_id': tweetId,
-        if (language != null) 'lang': language!,
+        if (language != null) 'lang': language,
       },
     ).toString();
   }
@@ -44,18 +44,18 @@ class TweetIntent {
   /// list of hashtag values without the preceding # character.
   ///
   /// For more info, visit https://developer.twitter.com/en/docs/twitter-for-websites/tweet-button/guides/web-intent
-  final List<String>? hashtags;
+  final List<String> hashtags;
 
   /// A username to associate with the tweet.
   ///
   /// The provided username will be appended to the end of the tweet with the
   /// text "via @username".
-  final String? via;
+  final String via;
 
   /// A fully-qualified URL with a HTTP or HTTPS scheme.
   ///
   /// The URL is currently displayed after the text and before the hashtags.
-  final String? url;
+  final String url;
 
   /// Pre-populated Tweet text.
   ///
@@ -65,7 +65,7 @@ class TweetIntent {
   /// The Tweet author may easily remove the text with a single delete action.
   ///
   /// For more info, visit https://developer.twitter.com/en/docs/twitter-for-websites/tweet-button/guides/web-intent
-  final String? text;
+  final String text;
 
   /// A list of related account.
   ///
@@ -73,14 +73,14 @@ class TweetIntent {
   /// important feature at the moment, and I don't know how to verify this.
   ///
   /// Feel free to open a pull request if this does not work for you.
-  final List<RelatedAccount>? related;
+  final List<RelatedAccount> related;
 
   /// The tweet ID of a parent tweet in a conversation, such as the initial
   /// tweet from your site or author account.
-  final String? inReplyTo;
+  final String inReplyTo;
 
   /// The language of the Twitter UI once the intent is launched.
-  final String? language;
+  final String language;
 
   @override
   String toString() {
@@ -88,13 +88,13 @@ class TweetIntent {
       _authority,
       _path,
       {
-        if (text != null) 'text': text!,
-        if (hashtags != null) 'hashtags': hashtags!.join(','),
-        if (via != null) 'via': via!,
-        if (url != null) 'url': url!,
-        if (related != null) 'related': related!.map((r) => '$r').join(','),
-        if (inReplyTo != null) 'in_reply_to': inReplyTo!,
-        if (language != null) 'lang': language!,
+        if (text != null) 'text': text,
+        if (hashtags != null) 'hashtags': hashtags.join(','),
+        if (via != null) 'via': via,
+        if (url != null) 'url': url,
+        if (related != null) 'related': related.map((r) => '$r').join(','),
+        if (inReplyTo != null) 'in_reply_to': inReplyTo,
+        if (language != null) 'lang': language,
       },
     ).toString();
   }
@@ -102,7 +102,7 @@ class TweetIntent {
 
 class RelatedAccount {
   RelatedAccount({
-    required this.username,
+    this.username,
     this.description,
   });
 
@@ -114,7 +114,7 @@ class RelatedAccount {
 
   /// Optional description of how the account relates to the action (such as
   /// tweet).
-  final String? description;
+  final String description;
   @override
   String toString() {
     if (description == null) return username;
@@ -124,7 +124,7 @@ class RelatedAccount {
 
 class LikeTweetIntent {
   LikeTweetIntent({
-    required this.tweetId,
+    this.tweetId,
     this.language,
   });
 
@@ -138,7 +138,7 @@ class LikeTweetIntent {
   final String tweetId;
 
   /// The language of the Twitter UI once the intent is launched.
-  final String? language;
+  final String language;
 
   @override
   String toString() {
@@ -147,7 +147,7 @@ class LikeTweetIntent {
       _path,
       {
         'tweet_id': tweetId,
-        if (language != null) 'lang': language!,
+        if (language != null) 'lang': language,
       },
     ).toString();
   }
@@ -155,7 +155,7 @@ class LikeTweetIntent {
 
 class FollowUserIntent {
   FollowUserIntent({
-    required this.username,
+    this.username,
     this.language,
   });
 
@@ -170,7 +170,7 @@ class FollowUserIntent {
   final String username;
 
   /// The language of the Twitter UI once the intent is launched.
-  final String? language;
+  final String language;
   @override
   String toString() {
     return Uri.https(
@@ -178,7 +178,7 @@ class FollowUserIntent {
       _path,
       {
         'screen_name': username,
-        if (language != null) 'lang': language!,
+        if (language != null) 'lang': language,
       },
     ).toString();
   }
@@ -186,7 +186,7 @@ class FollowUserIntent {
 
 class DirectMessageIntent {
   DirectMessageIntent({
-    required this.recipientId,
+    this.recipientId,
     this.text,
     this.language,
   });
@@ -199,10 +199,10 @@ class DirectMessageIntent {
   /// The pre-populated text in the message.
   ///
   /// The user will have the chance to edit or discard the message.
-  final String? text;
+  final String text;
 
   /// The language of the Twitter UI once the intent is launched.
-  final String? language;
+  final String language;
   @override
   String toString() {
     return Uri.https(
@@ -210,8 +210,8 @@ class DirectMessageIntent {
       _path,
       {
         'recipient_id': recipientId,
-        if (text != null) 'text': text!,
-        if (language != null) 'lang': language!,
+        if (text != null) 'text': text,
+        if (language != null) 'lang': language,
       },
     ).toString();
   }
