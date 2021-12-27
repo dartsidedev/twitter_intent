@@ -1,7 +1,8 @@
-## 1.0.0-nullsafety.0
+## 1.0.0
 
-- Initial version. Only with null safety.
+* Initial version with null safety
+* Supported intents: follow user, retweet a tweet, tweet something, reply to tweet, like a tweet, create direct message, localization.
 
-## 1.0.0-nullsafety.1
+## 0.9.0
 
-- Improved docs, etc...
+- No null safety

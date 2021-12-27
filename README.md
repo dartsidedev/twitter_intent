@@ -16,8 +16,10 @@ provides an idiomatic Dart interface to ask your users to
 
 * [Read the source code and **star the repo** on GitHub](https://github.com/dartsidedev/twitter_intent)
 * [Open an issue on GitHub](https://github.com/dartsidedev/twitter_intent/issues)
-* [See package on `pub.dev`](https://pub.dev/packages/twitter_intent)
-* [Read the docs on `pub.dev`](https://pub.dev/documentation/twitter_intent/latest/)
+* [See package on pub.dev](https://pub.dev/packages/twitter_intent)
+* [Read the docs on pub.dev](https://pub.dev/documentation/twitter_intent/latest/)
+
+**If you enjoy using this package, a thumbs-up on [pub.dev](https://pub.dev/packages/twitter_intent) would be highly appreciated! 👍💙**
 
 ### About Twitter Web Intents
 

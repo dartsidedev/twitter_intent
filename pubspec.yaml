@@ -1,6 +1,6 @@
 name: twitter_intent
 description: Sweet Dart package to work with Twitter Web Intents. Follow, like, tweet, retweet, direct message on Twitter.
-version: 1.0.0-nullsafety.1
+version: 1.0.0
 homepage: https://github.com/dartsidedev/twitter_intent
 issue_tracker: https://github.com/dartsidedev/twitter_intent/issues
 environment:
